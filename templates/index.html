@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <!--link rel="stylesheet" type="text/css" href="/static/style.css"-->
+         <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <div class=" text-center">
+         <br />
+         <a class="nav-item nav-link" href="/">
+            <h1>Tous les chemins mènent à la philosophie?</h1>
+         </a>
+         <p class=" text-center" >
+            Un jeu simple : en partant d’un article Wikipédia,
+            atteindre l’article « Philosophie » en suivant les liens d’un article à l’autre, et en aussi peu d’étapes que possible.       
+         </p>
+         <br />
+         <img class="text-center" src = "https://upload.wikimedia.org/wikipedia/commons/c/cf/Philbar_3.png"  >
+         <br /><a href="https://fr.wikipedia.org/wiki/Philosophie">Wikipedia: Philosophie</a>
+   </head>
+   <body>
+      <div class="container">
+         {% block content %}
+         {% block body %}
+         {% for message in get_flashed_messages(with_categories=True) %}
+         <div class="alert alert-{{ message[0] }}">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            {{ message[1] }}
+         </div>
+         {% endfor %}
+         <br />
+         <h3>{{ message }}</h3>
+         <form  action="/newgame" method="POST" >
+            <label for="start Wiki page">Starting Wiki page:</label>
+            <br /><input name="start" id="start" class="form-control" required>
+            <br /><button type="submit" class="btn btn-primary mb-2">GO</button>
+         </form>
+         {% endblock %}
+         {% endblock %}
+      </div>
+   </body>
+</html>
