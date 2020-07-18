@@ -7,5 +7,5 @@ In order to verify this assertion, I developped a small WebApp with 2 simple opt
 A manual Wikipedia Link explorer that requests Wikipedia’s API
 An automatic exploration that systematically chooses the first link among results.
 
-<p align="center"><img src="https://craw.githubusercontent.com/wangyangparis/wangyangparis.github.io/master/assets/img/WebGame.png" width="600"><p align="center"><img src="https://craw.githubusercontent.com/wangyangparis/wangyangparis.github.io/master/assets/img/WebGame2.png" width="600">
+<p align="center"><img src="https://raw.githubusercontent.com/wangyangparis/wangyangparis.github.io/master/assets/img/WebGame.png" width="600"><p align="center"><img src="https://raw.githubusercontent.com/wangyangparis/wangyangparis.github.io/master/assets/img/WebGame2.png" width="600">
 </img></p>
